@@ -11,7 +11,13 @@ export class DataInput extends LitElement {
 
   protected render(): TemplateResult {
     return html`
-      <input .value=${this.value} @input=${this.handleInputChange} />
+      <label for="data-input"></label>
+      <input
+        id="data-input"
+        type="text"
+        .value=${this.value}
+        @input=${this.handleInputChange}
+      />
     `;
   }
 

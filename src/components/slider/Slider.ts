@@ -17,6 +17,9 @@ export class Slider extends LitElement {
           .min=${this.range[sliderRangeIndexes.minRange]}
           .max=${this.range[sliderRangeIndexes.maxRange]}
           .value=${this.value}
+          aria-valuemin=${this.range[sliderRangeIndexes.minRange]}
+          aria-valuemax=${this.range[sliderRangeIndexes.maxRange]}
+          aria-valuenow=${this.value}
           class="slider"
           id="myRange"
           @input=${this.sendSliderChangeEvent}
